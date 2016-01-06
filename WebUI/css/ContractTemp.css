@@ -1,0 +1,39 @@
+﻿@charset "utf-8";
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, cite, dfn, em, img, ins, s, strong, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
+body { color: #242424; background: #888; font-size: 12px; line-height: 1.666; }
+body { font-family: Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+div { display: block; }
+.head { width: 920px; margin: 0 auto; position: inherit; }
+.main { position: absolute; z-index: 10; width: 920px; background-color: #fff; background: url(../images/d.jpg); }
+.top { float: left; width: 800px; margin-left: 60px; }
+.head h1 { text-align: center; font-size: 18px; line-height: 60px; font-weight: 900; }
+.head h2 { text-align: right; }
+.tx { width: 800px; }
+    .head ul li, .tx dd { float: left; line-height: 30px; margin-right: 5px; }
+.zw { line-height: 26px; }
+.cz { font-weight: 900; }
+.xd { height: 30px; background: url(../images/xd.jpg); }
+.jf { width: 120px; }
+.zh { width: 170px; }
+.qm { width: 350px; height: 120px; }
+.fl { float: left; }
+.fr { float: right; }
+.mt30 { margin-top: 30px; }
+.mt50 { margin-top: 50px; }
+.mt20 { margin-top: 20px; }
+.ml10 { margin-left: 10px; }
+.ml20 { margin-left: 20px; }
+.ml33 { margin-left: 36px; }
+.ml56 { margin-left: 56px; }
+.span_underline { border-bottom: 1px solid #000000; padding: 3px 5px; }
+.seal { width: 230px; height: 230px; position: absolute; z-index: 1; left: 80px; bottom: 30px; background-image: url(http://manage.rjb777.com/images/z1.png); }
+.seal1 { width: 230px; height: 230px; position: absolute; z-index: 1; right: 260px; bottom: 30px; background-image: url(http://manage.rjb777.com/images/z1.png); }
+.seal-a { width: 230px; height: 230px; position: absolute; z-index: 1; right: 260px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/z2.png); }
+.seal-243 { width: 230px; height: 230px; position: absolute; z-index: 1; right: 260px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/z2.png); }
+.seal-7753 { width: 230px; height: 230px; position: absolute; z-index: 1; right: 260px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/nuode.png); }
+.seal-10111 { width: 230px; height: 230px; position: absolute; z-index: 1; left: 80px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/jxdd.png); }
+.seal-10112 { width: 230px; height: 230px; position: absolute; z-index: 1; left: 80px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/jxxd.png); }
+.seal-11447 { width: 230px; height: 230px; position: absolute; z-index: 1; left: 80px; bottom: 50px; background-image: url(http://manage.rjb777.com/images/jxtdd.png); }
+table, table td, table th { border: 1px solid #242424; border-collapse: collapse; height: 25px; line-height: 25px; font-size: 12px; text-align: center; }

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CertDataBase">
+  <DataContextMoniker Name="/CertDataBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="91d0183d-bd6e-4641-bd5e-eed059b57364" absoluteBounds="0.75, 0.75, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/CertDataBaseDataContext/PdfBuildTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6716068f-f3b2-45ea-ab60-d486c0f403d0" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68af6456-78ba-4a84-9a88-b1f339275b27" absoluteBounds="3.75, 0.75, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/CertDataBaseDataContext/UserCert" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55d7f2d9-3fc3-4ed2-9a6a-b5636e5e213c" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82d09904-9d73-442a-8529-25ee3576b290" absoluteBounds="0.75, 3.75, 2, 1.7625655110677077">
+      <DataClassMoniker Name="/CertDataBaseDataContext/UserCertOverview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06540c79-f37f-4b42-abbd-3c0288582266" absoluteBounds="0.76500000000000012, 4.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

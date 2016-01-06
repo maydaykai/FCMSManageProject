@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{163729C2-C615-42B0-9621-A1849EB93FF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManageFcmsBll</RootNamespace>
+    <AssemblyName>ManageFcmsBll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib_manage\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsBll.cs" />
+    <Compile Include="AdvertisementBLL.cs" />
+    <Compile Include="ApplyAbandonLoanBLL.cs" />
+    <Compile Include="ApplyDeferLoanBLL.cs" />
+    <Compile Include="AppVersionBll.cs" />
+    <Compile Include="AreaBLL.cs" />
+    <Compile Include="AuditHistoryBll.cs" />
+    <Compile Include="BankAccountBll.cs" />
+    <Compile Include="BankAccount_BLBLL.cs" />
+    <Compile Include="BankBll.cs" />
+    <Compile Include="BankCardAuthentBLL.cs" />
+    <Compile Include="BatSmsHistoryBll.cs" />
+    <Compile Include="BidBLL.cs" />
+    <Compile Include="BidConfigBll.cs" />
+    <Compile Include="BidPieTotalBll.cs" />
+    <Compile Include="BranchCompanyBll.cs" />
+    <Compile Include="CashRecoBll.cs" />
+    <Compile Include="CashRecordBLL.cs" />
+    <Compile Include="ColumnBll.cs" />
+    <Compile Include="ColumnRightBll.cs" />
+    <Compile Include="CostSettingBll.cs" />
+    <Compile Include="CostVersionBll.cs" />
+    <Compile Include="CreditAssignmentBll.cs" />
+    <Compile Include="CreditLineBLL.cs" />
+    <Compile Include="DealTotalBll.cs" />
+    <Compile Include="DimChannelBll.cs" />
+    <Compile Include="DimExamStatusBLL.cs" />
+    <Compile Include="DimLoanUseBLL.cs" />
+    <Compile Include="GuaranteeNoBll.cs" />
+    <Compile Include="LoadStudentBLL.cs" />
+    <Compile Include="LoanAuthInfoBll.cs" />
+    <Compile Include="LoanScoreBll.cs" />
+    <Compile Include="LocalCreditBll.cs" />
+    <Compile Include="Marketing_Ex_PersonBLL.cs" />
+    <Compile Include="Marketing_RoleBLL.cs" />
+    <Compile Include="MediaTypeBll.cs" />
+    <Compile Include="MemberPointsBLL.cs" />
+    <Compile Include="MemberReferrBll.cs" />
+    <Compile Include="MemberReferralBll.cs" />
+    <Compile Include="PayLimitationBll.cs" />
+    <Compile Include="ProjectTemplateBll.cs" />
+    <Compile Include="DimProductScoreBLL.cs" />
+    <Compile Include="DimProductTypeBLL.cs" />
+    <Compile Include="EnterpriseAuthentBll.cs" />
+    <Compile Include="FcmsUserBll.cs" />
+    <Compile Include="FocusFigureBll.cs" />
+    <Compile Include="FundRecordBll.cs" />
+    <Compile Include="GuaranteeBLL.cs" />
+    <Compile Include="IdentityAuthentBll.cs" />
+    <Compile Include="InformationBll.cs" />
+    <Compile Include="LoanApplyBll.cs" />
+    <Compile Include="LoanBLL.cs" />
+    <Compile Include="LoanDelayedBll.cs" />
+    <Compile Include="LoanRapidBLL.cs" />
+    <Compile Include="LoanTotalBll.cs" />
+    <Compile Include="MemberBll.cs" />
+    <Compile Include="MemberDetailInfoBll.cs" />
+    <Compile Include="MemberInfoBll.cs" />
+    <Compile Include="MobilePushBll.cs" />
+    <Compile Include="MobileUpdateRecordBll.cs" />
+    <Compile Include="OverdueBLL.cs" />
+    <Compile Include="ParameterSetBll.cs" />
+    <Compile Include="ProcBatSmsSend.cs" />
+    <Compile Include="ProcFundReportBll.cs" />
+    <Compile Include="ProcRepaymentBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeReconciliationBll.cs" />
+    <Compile Include="RechargeRecordBll.cs" />
+    <Compile Include="ReCommendRewardBll.cs" />
+    <Compile Include="ReCommendRewardGrantBll.cs" />
+    <Compile Include="RegistrationBll.cs" />
+    <Compile Include="RepaymentDetailBll.cs" />
+    <Compile Include="RepaymentPlanBll.cs" />
+    <Compile Include="ReportBll.cs" />
+    <Compile Include="ReturnCashFeeBll.cs" />
+    <Compile Include="RewardLevelBll.cs" />
+    <Compile Include="RightBll.cs" />
+    <Compile Include="RoleBll.cs" />
+    <Compile Include="RoleRightBll.cs" />
+    <Compile Include="StudentInfoBLL.cs" />
+    <Compile Include="TotalCashBll.cs" />
+    <Compile Include="TotalMarketRepBll.cs" />
+    <Compile Include="TotalOperationBll.cs" />
+    <Compile Include="UserBidTotalBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManageFcmsCommon\ManageFcmsCommon.csproj">
+      <Project>{f46528fd-23dd-4293-b4c3-4a33b95c32e2}</Project>
+      <Name>ManageFcmsCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManageFcmsConn\ManageFcmsConn.csproj">
+      <Project>{4E8C3A41-9043-4D84-8290-886F9A5E3941}</Project>
+      <Name>ManageFcmsConn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManageFcmsDal\ManageFcmsDal.csproj">
+      <Project>{3f8171c1-d98b-4d8a-8b2b-589bdc793571}</Project>
+      <Name>ManageFcmsDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManageFcmsModel\ManageFcmsModel.csproj">
+      <Project>{E71E4BC8-ADE7-4086-86CB-15385A2AF40A}</Project>
+      <Name>ManageFcmsModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

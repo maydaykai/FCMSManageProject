@@ -1,0 +1,25 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, button{padding:0;margin:0;}
+body{ font:12px/18px Verdana, Simsun, Helvetica, Arial, sans-serif;color:#333;}
+fieldset, img{border:0;}
+input, label, select, option, textarea, button, fieldset, legend{font:12px/18px Verdana, Simsun, Helvetica, Arial, sans-serif;}
+ul{list-style:none;}
+
+.fix{ zoom:1;}
+.fix:after{ content:"."; clear:both; visibility:hidden; overflow:hidden; display:block; height:0;}
+
+.dis{ display:none} /*隐藏*/
+.fl{ float:left} /*左浮动*/
+.fr{ float:right} /*右浮动*/
+.clear{ clear:both} /*清除浮动*/
+.red{color:#ff4e00; font-family:"宋体"; font-size:12px;} /*红色文字*/
+.boder1px{ border:1px solid #ddd;} /*1像素边框*/
+.position_rel{ position:relative} /*相对定位*/
+
+
+
+.form{ height:29px; text-align:center; border:1px solid #ccc; margin:50px auto;}
+.form td{ height:28px; line-height:28px; border-bottom:1px solid #ccc;text-align:left;}
+.form .table_left{ height:29px; line-height:29px; background:#ddecf7;text-align:right;}

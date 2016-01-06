@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qianzhang" Class="CfcaDataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.44;Initial Catalog=qianzhang;Persist Security Info=True;User ID=moxiaodong" SettingsObjectName="SignCert.Properties.Settings" SettingsPropertyName="qianzhangConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_EASTRACERT" Member="TBL_EASTRACERT">
+    <Type Name="TBL_EASTRACERT">
+      <Column Name="ID" Type="System.String" DbType="VarChar(35) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="REF" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AUTHCODE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RESPONSEID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PKCS10" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="APPTIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VALIDINTERVAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USERNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ORGNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="USERID" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="IDNUM" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CERTTYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PFXCPNTENT" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CERTMODEL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

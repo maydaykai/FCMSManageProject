@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F8171C1-D98B-4D8A-8B2B-589BDC793571}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManageFcmsDal</RootNamespace>
+    <AssemblyName>ManageFcmsDal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIPGacctInf">
+      <HintPath>..\_lib_manage\AIPGacctInf.dll</HintPath>
+    </Reference>
+    <Reference Include="LLYTPay">
+      <HintPath>..\_lib_manage\LLYTPay.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\_lib_manage\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsDal.cs" />
+    <Compile Include="AdvertisementDAL.cs" />
+    <Compile Include="ApplyAbandonLoanDAL.cs" />
+    <Compile Include="ApplyDeferLoanDAL.cs" />
+    <Compile Include="AppVersionDal.cs" />
+    <Compile Include="AreaDAL.cs" />
+    <Compile Include="AuditHistoryDal.cs" />
+    <Compile Include="BankAccountDal.cs" />
+    <Compile Include="BankAccount_BLDAL.cs" />
+    <Compile Include="BankCardAuthentDAL.cs" />
+    <Compile Include="BankDal.cs" />
+    <Compile Include="BatSmsHistoryDal.cs" />
+    <Compile Include="BidPieTotalDal.cs" />
+    <Compile Include="BranchCompanyDal.cs" />
+    <Compile Include="CashRecoDal.cs" />
+    <Compile Include="CreditAssignmentDal.cs" />
+    <Compile Include="CreditLineDAL.cs" />
+    <Compile Include="DealTotalDal.cs" />
+    <Compile Include="DimChannelDal.cs" />
+    <Compile Include="GuaranteeNoDal.cs" />
+    <Compile Include="DimProductScoreDAL.cs" />
+    <Compile Include="LoadStudentDAL.cs" />
+    <Compile Include="LoanAuthInfoDal.cs" />
+    <Compile Include="LocalCreditDal.cs" />
+    <Compile Include="LoanScoreDal.cs" />
+    <Compile Include="Marketing_Ex_PersonDAL.cs" />
+    <Compile Include="Marketing_RoleDAL.cs" />
+    <Compile Include="MediaTypeDal.cs" />
+    <Compile Include="MemberPointsDAL.cs" />
+    <Compile Include="MemberReferralDal.cs" />
+    <Compile Include="MemberRefrrDal.cs" />
+    <Compile Include="PayLimitationDal.cs" />
+    <Compile Include="ProjectTemplate.cs" />
+    <Compile Include="LoanApplyDal.cs" />
+    <Compile Include="DimProductTypeDAL.cs" />
+    <Compile Include="MobileUpdateRecordDal.cs" />
+    <Compile Include="ProcBatSmsSendDal.cs" />
+    <Compile Include="BidConfigDal.cs" />
+    <Compile Include="BidDAL.cs" />
+    <Compile Include="CashRecordDAL.cs" />
+    <Compile Include="ColumnDal.cs" />
+    <Compile Include="ColumnRightDal.cs" />
+    <Compile Include="CostSettingDal.cs" />
+    <Compile Include="CostVersionDal.cs" />
+    <Compile Include="DimExamStatusDAL.cs" />
+    <Compile Include="DimLoanUseDAL.cs" />
+    <Compile Include="EnterpriseAuthentDal.cs" />
+    <Compile Include="FcmsUserDal.cs" />
+    <Compile Include="FocusFigureDal.cs" />
+    <Compile Include="FundRecordDal.cs" />
+    <Compile Include="GuaranteeDAL.cs" />
+    <Compile Include="IdentityAuthentDal.cs" />
+    <Compile Include="InformationDal.cs" />
+    <Compile Include="LoanDAL.cs" />
+    <Compile Include="LoanDelayedDal.cs" />
+    <Compile Include="LoanRapidDAL.cs" />
+    <Compile Include="LoanTotalDal.cs" />
+    <Compile Include="MemberDal.cs" />
+    <Compile Include="MemberDetailInfoDal.cs" />
+    <Compile Include="MemberInfoDal.cs" />
+    <Compile Include="MobilePushDal.cs" />
+    <Compile Include="OverdueDAL.cs" />
+    <Compile Include="ParameterSetDal.cs" />
+    <Compile Include="ProcFundReportDal.cs" />
+    <Compile Include="ProcRepaymentDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeReconciliationDal.cs" />
+    <Compile Include="RechargeRecordDal.cs" />
+    <Compile Include="ReCommendRewardDal.cs" />
+    <Compile Include="ReCommendRewardGrantDal.cs" />
+    <Compile Include="RegistrationDal.cs" />
+    <Compile Include="RepaymentDetailDal.cs" />
+    <Compile Include="RepaymentPlanDal.cs" />
+    <Compile Include="ReportDal.cs" />
+    <Compile Include="ReturnCashFeeDal.cs" />
+    <Compile Include="RewardLevelDal.cs" />
+    <Compile Include="RightDal.cs" />
+    <Compile Include="RoleDal.cs" />
+    <Compile Include="RoleRightDal.cs" />
+    <Compile Include="SMSDAL.cs" />
+    <Compile Include="StudentInfoDAL.cs" />
+    <Compile Include="TotalCashDal.cs" />
+    <Compile Include="TotalMarketRepDal.cs" />
+    <Compile Include="TotalOperationDal.cs" />
+    <Compile Include="UserBidTotalDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManageFcmsCommon\ManageFcmsCommon.csproj">
+      <Project>{f46528fd-23dd-4293-b4c3-4a33b95c32e2}</Project>
+      <Name>ManageFcmsCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManageFcmsConn\ManageFcmsConn.csproj">
+      <Project>{4e8c3a41-9043-4d84-8290-886f9a5e3941}</Project>
+      <Name>ManageFcmsConn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ManageFcmsModel\ManageFcmsModel.csproj">
+      <Project>{e71e4bc8-ade7-4086-86cb-15385a2af40a}</Project>
+      <Name>ManageFcmsModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

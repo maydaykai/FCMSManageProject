@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 16.625" name="RjbDbLuckyDraw">
+  <DataContextMoniker Name="/RjbDbLuckyDrawDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ec013635-1047-4bfe-88d6-4966cb1802e0" absoluteBounds="3.75, 6.375, 2, 5.97236368815104">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76f5cae0-4b89-40e6-85e2-38853ecebb03" absoluteBounds="3.7649999999999997, 6.835, 1.9700000000000002, 5.4123636881510411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43c819f3-b510-4326-82db-0ea449134605" absoluteBounds="4.125, 2.375, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/Prize" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0adf8848-cd41-4e30-b73c-14d49d4f312c" absoluteBounds="4.14, 2.835, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b321da51-e5b9-4db0-abfd-4df5433d19d5" absoluteBounds="1.5, 5.25, 2, 1.9068933105468746">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/SweepstakeRecord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f916f0c5-5d2f-45fd-a039-d41e51d16463" absoluteBounds="1.5150000000000001, 5.71, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.96875 : 4.51960489908854); (5.96875 : 6.09375225); (3.5 : 6.09375225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/RjbDbLuckyDrawDataContext/Prize/Prize_SweepstakeRecord" />
+      <nodes>
+        <classShapeMoniker Id="43c819f3-b510-4326-82db-0ea449134605" />
+        <classShapeMoniker Id="b321da51-e5b9-4db0-abfd-4df5433d19d5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="73e2e951-5ec2-4c48-84db-ec51e6c74344" absoluteBounds="6.5, 2.5, 2, 3.0156579589843746">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/Bidding" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cecc3da-00cc-488c-8b01-7b195c9536ca" absoluteBounds="6.515, 2.96, 1.9700000000000002, 2.455657958984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f11c5ad-9e3c-482f-993f-574926aed22b" absoluteBounds="6.375, 6, 2, 10.407422281901042">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/Loan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4606dd03-761d-4cbd-86a7-e61776c4b966" absoluteBounds="6.39, 6.46, 1.9700000000000002, 9.8474222819010411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa9fd3a5-c49b-4576-84d4-b96e7c9dfdd8" absoluteBounds="1.375, 2.375, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/Sweepstake" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22aaa951-214e-45e6-8c2c-68b353720eec" absoluteBounds="1.3900000000000001, 2.835, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 3.4208437093099); (4.125 : 3.4208437093099)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RjbDbLuckyDrawDataContext/Sweepstake/Sweepstake_Prize" />
+      <nodes>
+        <classShapeMoniker Id="aa9fd3a5-c49b-4576-84d4-b96e7c9dfdd8" />
+        <classShapeMoniker Id="43c819f3-b510-4326-82db-0ea449134605" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.4375 : 4.46668741861979); (2.4375 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/RjbDbLuckyDrawDataContext/Sweepstake/Sweepstake_SweepstakeRecord" />
+      <nodes>
+        <classShapeMoniker Id="aa9fd3a5-c49b-4576-84d4-b96e7c9dfdd8" />
+        <classShapeMoniker Id="b321da51-e5b9-4db0-abfd-4df5433d19d5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7f038133-47f0-441d-8834-73c29b69783c" absoluteBounds="1.5, 7.5, 2, 3.2004520670572916">
+      <DataClassMoniker Name="/RjbDbLuckyDrawDataContext/MemberInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b92a0fc-28b0-48bc-bbf9-34e3b5ea8a40" absoluteBounds="1.5150000000000001, 7.9600000000000009, 1.9700000000000002, 2.6404520670572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

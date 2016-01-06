@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RJBDB" Class="RjbDbLuckyDrawDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.249;Initial Catalog=RJBDB;Persist Security Info=True;User ID=sa" SettingsObjectName="LuckyDraw.Properties.Settings" SettingsPropertyName="RJBDBConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Member" Member="Member">
+    <Type Name="Member">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MemberName" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="PassWord" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TranPassWord" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Balance" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LastIP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RegTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsLocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LastLoginTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreditPoint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MemberPoint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Times" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecoCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CompleStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MemberLevel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VIPStartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VIPEndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Icon" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="IsCaringSms" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Channel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChannelRemark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AllowWithdraw" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prize" Member="Prize">
+    <Type Name="Prize">
+      <Column Name="PrizeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PrizeName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="PrizeNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WinningRate" Type="System.Decimal" DbType="Decimal(18,10) NOT NULL" CanBeNull="false" />
+      <Column Name="IntervalTime" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="SweepstakeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrizeDefault" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Prize_SweepstakeRecord" Member="SweepstakeRecord" ThisKey="PrizeId" OtherKey="PrizeId" Type="SweepstakeRecord" />
+      <Association Name="Sweepstake_Prize" Member="Sweepstake" ThisKey="SweepstakeId" OtherKey="SweepstakeId" Type="Sweepstake" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SweepstakeRecord" Member="SweepstakeRecord">
+    <Type Name="SweepstakeRecord">
+      <Column Name="SweepstakeRecordId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SweepstakeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrizeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Mark" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Prize_SweepstakeRecord" Member="Prize" ThisKey="PrizeId" OtherKey="PrizeId" Type="Prize" IsForeignKey="true" />
+      <Association Name="Sweepstake_SweepstakeRecord" Member="Sweepstake" ThisKey="SweepstakeId" OtherKey="SweepstakeId" Type="Sweepstake" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bidding" Member="Bidding">
+    <Type Name="Bidding">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BidType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoanID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BidAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BidStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="CALoanID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsTransfer" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountAmount" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Loan" Member="Loan">
+    <Type Name="Loan">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoanNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LoanAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LoanRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ReleasedRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LoanTerm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RepaymentMethod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BorrowMode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TradeType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BidAmountMin" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BidAmountMax" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="BidStratTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BidEndTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Bond" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExamStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BiddingProcess" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DimLoanUseID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BidCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GuaranteeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReviewTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RepaymentLastTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContractNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FullScaleTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UnderTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContractGenerTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NeedGuarantee" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GuaranteeFee" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NeedLoanCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LoanServiceCharges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NeedBidCharges" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BidServiceCharges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="LoanDescribe" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="AutoBidScale" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="LoanTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LoanTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AuthStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SwitchAutoRepayment" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SwitchBuildOverdueFee" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SwitchAutoPass" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AuthHistory" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SumScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ScoreLevel" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Agency" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LinkmanOne" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelOne" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="LinkmanTwo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TelTwo" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sweepstake" Member="Sweepstake">
+    <Type Name="Sweepstake">
+      <Column Name="SweepstakeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SweepstakeName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SweepstakeFactor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Unit" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="OutUnit" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Sweepstake_Prize" Member="Prize" ThisKey="SweepstakeId" OtherKey="SweepstakeId" Type="Prize" />
+      <Association Name="Sweepstake_SweepstakeRecord" Member="SweepstakeRecord" ThisKey="SweepstakeId" OtherKey="SweepstakeId" Type="SweepstakeRecord" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MemberInfo" Member="MemberInfo">
+    <Type Name="MemberInfo">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MemberID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RealName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IdentityCard" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="Province" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="City" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

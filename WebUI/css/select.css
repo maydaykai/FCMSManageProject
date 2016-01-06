@@ -1,0 +1,47 @@
+
+/*-----------------------下拉列表---------------------------------*/
+
+
+.selectDiv .select_box {  height: 34px; float: left; margin-right: 5px; }
+
+.selectDiv div.tag_select { display: block; color: #2191c5; height: 29px; background: url(../images/input_bg.png) repeat-x; text-indent: 5px; line-height: 29px; overflow: hidden; white-space: nowrap; }
+
+.selectDiv div.tag_select_disabled { display: block; color: black; height: 29px; background: url(../images/gray_bg.png) repeat-x; text-indent: 5px; line-height: 29px; overflow: hidden; white-space: nowrap; cursor:none; }
+
+.selectDiv div.tag_select_hover { display: block; color: #2ca0d6; height: 29px; background: url(../images/input_bg.png) repeat-x; text-indent: 5px; line-height: 29px; overflow: hidden; white-space: nowrap; }
+
+.selectDiv div.tag_select_open { display: block; color: #2ca0d6; height: 29px; background: url(../images/input_bg.png) repeat-x; text-indent: 5px; line-height: 29px; overflow: hidden; white-space: nowrap; }
+
+
+.selectDiv ul.tag_options { position: absolute; border: 1px solid #9fd4ed; background: #fff; cursor: pointer; margin-left: -4px; max-height: 200px; overflow-y: scroll; white-space: nowrap; overflow-x: hidden; *width: expression(((document.documentElement.clientWidth||document.body.clientWidth)<=120? "120px":"350")); }
+
+    .selectDiv ul.tag_options li { display: block; height: 29px; text-decoration: none; line-height: 29px; color: #666; margin: 2px; padding-left: 5px; padding-right: 5px; }
+
+        .selectDiv ul.tag_options li.open_hover { background: #FF8C69; color: #FFFFFF; height: 29px; line-height: 29px; display: block; }
+
+        .selectDiv ul.tag_options li.open_selected { background: #cbe9f7; color: #1b759f; height: 29px; line-height: 29px; display: block; }
+
+/*-------------------区域级联下拉样式---------------------*/
+/* diy_select */
+.diy_select { height: 29px; /*width: 128px;*/ position: relative; font-size: 12px; margin: 5px; background: #fff; color: #000; float: left; }
+
+.diy_select_btn, .diy_select_txt { float: left; height: 100%; line-height: 29px; }
+
+.diy_select, .diy_select_list { /*border: 1px solid #9fd4ed;*/ }
+
+.diy_select_txt { color: #1b759f; text-indent: 5px; height: 29px; line-height: 29px; width: 100px; background: url(../images/input_bg.png) repeat-x; }
+
+.diy_select_txt, .diy_select_list li { overflow: hidden; }
+
+.diy_select_btn { width: 31px; height: 29px; background: url(../images/select_right.png) no-repeat center; cursor: pointer; }
+
+.diy_select_list { position: absolute; top: 28px; left: 0; z-index: 88888; border-top: none; list-style-type: none; display: none; _top: 29px; border: 1px solid #9fd4ed; background: #fff; cursor: pointer; max-height: 200px; overflow-y: scroll; overflow-x: hidden; white-space: nowrap; width: auto; min-width: 80px; *width: expression(((document.documentElement.clientWidth||document.body.clientWidth)<=100? "100px":"300")); }
+
+    .diy_select_list li { list-style: none; cursor: default; _background: #fff; height: 29px; text-decoration: none; line-height: 29px; color: #666; margin: 1px; padding-left: 3px; padding-right: 3px; }
+
+        .diy_select_list li.focus { background: #3399FF; color: #fff; }
+
+        .diy_select_list li.selected { background: #cbe9f7; color: #1b759f; }
+
+.diy_select_input { }
+.inputText { height: 29px; /*width: 128px;*/ position: relative; margin: 5px; float: left; }

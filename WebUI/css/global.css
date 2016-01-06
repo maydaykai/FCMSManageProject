@@ -1,0 +1,84 @@
+﻿
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, button { padding: 0; margin: 0; }
+body { font: 12px/18px Verdana, Simsun, Helvetica, Arial, sans-serif; color: #333; }
+fieldset, img { border: 0; }
+input, label, select, option, textarea, button, fieldset, legend { font: 12px/18px Verdana, Simsun, Helvetica, Arial, sans-serif;
+   
+}
+
+body { background: #ffffff; padding: 10px; }
+ul { list-style: none; }
+
+.selectDiv span { height: 29px; text-indent: 5px; line-height: 29px; }
+.selectDiv . { height: 29px; text-indent: 5px; line-height: 29px; }
+.fl { float: left; }
+/*左浮动*/
+.fr { float: right; }
+/*右浮动*/
+.clear { clear: both; }
+/*清除浮动*/
+
+a { blr: expression(this.onFocus=this.blur()); }
+/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+:focus { outline: 0; }
+
+.checkList label { float: left; margin-left: 3px; margin-right: 10px; font-size: 14px; margin-top: -2px; margin-top: 0px; }
+
+.editTable { text-align: center; border-collapse: collapse; border: 1px solid #AFC9EA; max-width: 1500px; min-width: 700px; width: 100%; *width: expression(((document.documentElement.clientWidth||document.body.clientWidth)<=700? "700px":"100%")); margin: 0; padding: 0; }
+
+    .editTable th { height: 35px; border-collapse: collapse; border: 1px solid #AFC9EA; background-color: #E0EEEE; color: #333333; }
+
+    .editTable td { border-collapse: collapse; border: 1px solid #AFC9EA; word-break: break-all; height: 35px; }
+
+
+.editTablea { text-align: center; border-collapse: collapse; border: 1px solid #AFC9EA; margin: 0; padding: 0; }
+
+    .editTablea th { height: 35px; border-collapse: collapse; border: 1px solid #AFC9EA; background-color: #E0EEEE; color: #333333; }
+
+    .editTablea td { border-collapse: collapse; border: 1px solid #AFC9EA; word-break: break-all; height: 35px; }
+
+.editTableb { text-align: center; border-collapse: collapse; border: 1px solid #AFC9EA; margin: 0; padding: 0; width: 100%; }
+
+    .editTableb th { height: 35px; border-collapse: collapse; border: 1px solid #AFC9EA; background-color: #E0EEEE; color: #333333; }
+
+    .editTableb td { border-collapse: collapse; border: 1px solid #AFC9EA; word-break: break-all; height: 35px; }
+
+
+.input_text { float: left; height: 29px; background: url(/images/input_bg.png) repeat-x; border: 0; text-indent: 3px; line-height: 29px; color: #1B759F; }
+/*两字按钮*/
+.inputButton { background: url(../images/button_bg.png) repeat-x; height: 29px; line-height: 29px; width: 50px; 
+cursor: pointer; border-left: solid 1px #acdcff; border-right: solid 1px #acdcff; font-size: 1.1em; font-weight: bold; color: #45a6de;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: inherit;
+    border-bottom-width: medium;
+}
+    .inputButton:hover { background: url(../images/button_focus_bg.png) repeat-x; height: 29px; line-height: 29px; width: 50px; border: none; cursor: pointer; border-left: solid 1px #45a6de; border-right: solid 1px #45a6de; font-size: 1.1em; color: #3A5FCD; }
+.inputButtonDisabled { background: url(../images/button_disabled_bg.png) repeat-x; height: 29px; line-height: 29px; width: 50px; border: none; cursor: not-allowed; color: #d4d2d2; border-left: solid 1px #d4d2d2; border-right: solid 1px #d4d2d2; font-size: 1.1em; outline: none; -moz-outline: none; }
+/*四字按钮*/
+.inputButton_B { background: url(../images/button_bg.png) repeat-x; height: 29px; line-height: 29px; width: 75px; border: none; cursor: pointer; border-left: solid 1px #acdcff; border-right: solid 1px #acdcff; font-size: 1.1em; font-weight: bold; color: #45a6de; }
+    .inputButton_B:hover { background: url(../images/button_focus_bg.png) repeat-x; height: 29px; line-height: 29px; width: 75px; border: none; cursor: pointer; border-left: solid 1px #45a6de; border-right: solid 1px #45a6de; font-size: 1.1em; color: #3A5FCD; }
+.inputButton_BDisabled { background: url(../images/button_disabled_bg.png) repeat-x; height: 29px; line-height: 29px; width: 75px; border: none; cursor: not-allowed; color: #d4d2d2; border-left: solid 1px #d4d2d2; border-right: solid 1px #d4d2d2; font-size: 1.1em; outline: none; -moz-outline: none; }
+/*六字按钮*/
+.inputButton_C { background: url(../images/button_bg.png) repeat-x; height: 29px; line-height: 29px; width: 100px; border: none; cursor: pointer; border-left: solid 1px #acdcff; border-right: solid 1px #acdcff; font-size: 1.1em; font-weight: bold; color: #45a6de; }
+    .inputButton_C:hover { background: url(../images/button_focus_bg.png) repeat-x; height: 29px; line-height: 29px; width: 100px; border: none; cursor: pointer; border-left: solid 1px #45a6de; border-right: solid 1px #45a6de; font-size: 1.1em; color: #3A5FCD; }
+.inputButton_CDisabled { background: url(../images/button_disabled_bg.png) repeat-x; height: 29px; line-height: 29px; width: 100px; border: none; cursor: not-allowed; color: #d4d2d2; border-left: solid 1px #d4d2d2; border-right: solid 1px #d4d2d2; font-size: 1.1em; outline: none; -moz-outline: none; }
+
+.input_Disabled { float: left; height: 29px; background: url(/images/gray_bg.png) repeat-x; border: 0; text-indent: 3px; line-height: 29px; color: #555; cursor: not-allowed; }
+/*tip*/
+.tip_wrap { position: relative; float: left; display: inline; left: 5px; font: 12px/1.5 arial; filter: alpha(opacity=70); opacity: .7; }
+.tip_content { padding: 4px 10px; _padding-bottom: 1px; float: left; display: inline; background: #fff; color: #ff0000; border: 1px solid #C00000; margin-left: 5px; zoom: 1; }
+.arrow_left { background: url(../images/tip_arrow.gif) no-repeat; display: block; width: 6px; height: 26px; position: absolute; left: 0px; top: 0px; }
+.arrow_right { background: url(../images/tip_arrow.gif) no-repeat 100% 0; display: block; width: 6px; height: 26px; position: absolute; right: -6px; top: 0px; }
+/*圆角边框开始*/
+.xtop, .xbottom { display: block; background: transparent; font-size: 1px; }
+.xb1, .xb2, .xb3, .xb4 { display: block; overflow: hidden; }
+.xb1, .xb2, .xb3 { height: 1px; }
+.xb2, .xb3, .xb4 { border-left: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; }
+.xb1 { margin: 0 2px; background: #cfcfcf; }
+.xb2 { margin: 0 1px; }
+.xboxcon { margin: 0; display: block; border: 0 solid #cfcfcf; border-width: 0 1px; padding: 3px; }
+/*圆角边框结束*/
+.hide{ display: none;}

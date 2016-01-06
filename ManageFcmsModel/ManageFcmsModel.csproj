@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E71E4BC8-ADE7-4086-86CB-15385A2AF40A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManageFcmsModel</RootNamespace>
+    <AssemblyName>ManageFcmsModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUsModel.cs" />
+    <Compile Include="ApplyAbandonLoanModel.cs" />
+    <Compile Include="ApplyDeferLoanModel.cs" />
+    <Compile Include="AppointmentLoan.cs" />
+    <Compile Include="AppVersionModel.cs" />
+    <Compile Include="AreaModel.cs" />
+    <Compile Include="AuditHistoryModel.cs" />
+    <Compile Include="AuthColumn.cs" />
+    <Compile Include="BankAccountAuthentModel.cs" />
+    <Compile Include="BankAccountModel.cs" />
+    <Compile Include="BankAccount_BLModel.cs" />
+    <Compile Include="BankCardAuthentModel.cs" />
+    <Compile Include="BankModel.cs" />
+    <Compile Include="BidConfigModel.cs" />
+    <Compile Include="BidModel.cs" />
+    <Compile Include="BranchCompanyMemberModel.cs" />
+    <Compile Include="BranchCompanyModel.cs" />
+    <Compile Include="CashRecoModel.cs" />
+    <Compile Include="CashRecordModel.cs" />
+    <Compile Include="ColumnModel.cs" />
+    <Compile Include="ColumnRightModel.cs" />
+    <Compile Include="CostSettingModel.cs" />
+    <Compile Include="CostVersionModel.cs" />
+    <Compile Include="CreditAssignmentDetailModel.cs" />
+    <Compile Include="CreditAssignmentModel.cs" />
+    <Compile Include="CreditLineModel.cs" />
+    <Compile Include="DimExamStatusModel.cs" />
+    <Compile Include="DimLoanUseModel.cs" />
+    <Compile Include="DimMemberPointsModel.cs" />
+    <Compile Include="DimProductScoreModel.cs" />
+    <Compile Include="DimRewardLevelModel.cs" />
+    <Compile Include="EnterpriseAuthentModel.cs" />
+    <Compile Include="Ex_PersonModel.cs" />
+    <Compile Include="FcmsUserModel.cs" />
+    <Compile Include="FundRecordModel.cs" />
+    <Compile Include="FocusFigureModel.cs" />
+    <Compile Include="GreenChannelRecordModel.cs" />
+    <Compile Include="GuaranteeModel.cs" />
+    <Compile Include="GuaranteeNoModel.cs" />
+    <Compile Include="IdentityAuthentModel.cs" />
+    <Compile Include="InformationModel.cs" />
+    <Compile Include="InformationSectionModel.cs" />
+    <Compile Include="LoanApplyModel.cs" />
+    <Compile Include="LoanAuthInfoModel.cs" />
+    <Compile Include="LoanDelayedModel.cs" />
+    <Compile Include="LoanEnterpriseMemberInfoModel.cs" />
+    <Compile Include="LocalCreditApplyModel.cs" />
+    <Compile Include="LocalCreditModel.cs" />
+    <Compile Include="LoanMemberInfoModel.cs" />
+    <Compile Include="LoanModel.cs" />
+    <Compile Include="LoanRapidModel.cs" />
+    <Compile Include="LoanScoreModel.cs" />
+    <Compile Include="Loan_StudentInfo.cs" />
+    <Compile Include="MailModel.cs" />
+    <Compile Include="MarketingDaperTypeModel.cs" />
+    <Compile Include="Marketing_CompetenceModel.cs" />
+    <Compile Include="Marketing_EX_Data.cs" />
+    <Compile Include="Marketing_FunctionOperationModel.cs" />
+    <Compile Include="Marketing_MoveModel.cs" />
+    <Compile Include="Marketing_RoleNameModel.cs" />
+    <Compile Include="Marketing_UserJoinRoleModel.cs" />
+    <Compile Include="MediaTypeModel.cs" />
+    <Compile Include="MemberDetailInfoModel.cs" />
+    <Compile Include="MemberInfoModel.cs" />
+    <Compile Include="MemberModel.cs" />
+    <Compile Include="MemberRecommendedModel.cs" />
+    <Compile Include="MobilePushModel.cs" />
+    <Compile Include="MobileUpdateRecordModel.cs" />
+    <Compile Include="ParameterSetModel.cs" />
+    <Compile Include="PayLimitation.cs" />
+    <Compile Include="ProcFundReportModel.cs" />
+    <Compile Include="ProcInvestModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeRecoDifferenceModel.cs" />
+    <Compile Include="RechargeRecordModel.cs" />
+    <Compile Include="ReCommendRewardGrantModel.cs" />
+    <Compile Include="RepaymentPlanModel.cs" />
+    <Compile Include="ResponseLLModel.cs" />
+    <Compile Include="ReturnCashFeeModel.cs" />
+    <Compile Include="RightModel.cs" />
+    <Compile Include="RoleModel.cs" />
+    <Compile Include="RoleRightModel.cs" />
+    <Compile Include="SMSModel.cs" />
+    <Compile Include="StudentInfo.cs" />
+    <Compile Include="StudentLoanApply.cs" />
+    <Compile Include="StudentRlust.cs" />
+    <Compile Include="TotalOperationModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ManageFcmsCommon\ManageFcmsCommon.csproj">
+      <Project>{f46528fd-23dd-4293-b4c3-4a33b95c32e2}</Project>
+      <Name>ManageFcmsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

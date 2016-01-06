@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CfcaDataBase">
+  <DataContextMoniker Name="/CfcaDataBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="18b6c682-995b-4750-b195-f9eb1afb4751" absoluteBounds="2.625, 2, 2, 4.0548018391927076">
+      <DataClassMoniker Name="/CfcaDataBaseDataContext/TBL_EASTRACERT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e405f784-b7bb-46a0-8b9b-5a1a94a3ff76" absoluteBounds="2.64, 2.46, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

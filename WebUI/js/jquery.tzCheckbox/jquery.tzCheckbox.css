@@ -1,0 +1,43 @@
+.tzCheckBox {
+    background: url('checkboxOffOn.png') no-repeat;
+    background-position: 0px 0px;
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+
+    .tzCheckBox .tzCBContent {
+        color: white;
+        display: none;
+    }
+
+    .tzCheckBox .checked {
+        background: url('checkboxOffOn.png') no-repeat;
+        background-position: 0 -18px;
+        width: 16px;
+        height: 18px;
+    }
+
+
+
+        .tzCheckBox.checked .tzCBContent {
+            text-align: left;
+        }
+
+.tzCBPart {
+    background: url('checkboxOffOn.png') no-repeat;
+    background-position: 0 0px;
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+}
+
+.tzCheckBox.checked .tzCBPart {
+    background: url('checkboxOffOn.png') no-repeat;
+    background-position: 0 -18px;
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+}
